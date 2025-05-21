@@ -8,8 +8,8 @@ import os
 app = Flask(__name__)
 
 # 用你在 LINE Developers 上的 token 與 secret
-LINE_CHANNEL_ACCESS_TOKEN = os.environ.get("bxiVQtfZCs7ZUGrDUjW9gtx9hneFGufchIIVcaQ+sxcrdTSnHXy/x3QVceK+yB0lPQd29FrVrobewrz2/tF56J4BixU9+AKxbPvexdptDIBkNNDeBuk98pmN1lHIErbjHGgKsvKb84jhIEH6cf7CKgdB04t89/1O/w1cDnyilFU=")
-LINE_CHANNEL_SECRET = os.environ.get("55696dcaf56f0f07b349f463ceda78e0")
+LINE_CHANNEL_ACCESS_TOKEN = os.environ.get("LINE_CHANNEL_ACCESS_TOKEN")
+LINE_CHANNEL_SECRET = os.environ.get("LINE_CHANNEL_SECRET")
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
